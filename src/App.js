@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import Categories from './components/Categories';
 import Campaigns from './components/Campaigns';
 import Favorites from './components/Favorites';
+import MobileApp from './components/MobileApp';
 function App() {
   return (
     <div >
@@ -12,6 +13,7 @@ function App() {
       <Categories/>
       <Campaigns/>
       <Favorites/>
+      <MobileApp/>
       
     </div>
   );
