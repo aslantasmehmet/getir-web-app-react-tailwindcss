@@ -1,3 +1,10 @@
+![alt text](https://https://res.cloudinary.com/dd4d48hwn/image/upload/v1661765026/getir1_sggloz.jpg)
+  ![alt text](https://https://res.cloudinary.com/dd4d48hwn/image/upload/v1661765026/getir2_zchzma.jpg)
+   ![alt text](https://res.cloudinary.com/dd4d48hwn/image/upload/v1661765026/getir3_myrazv.jpg)
+    ![alt text](https://https://res.cloudinary.com/dd4d48hwn/image/upload/v1661765030/getir4_oznsqa.jpg)
+     ![alt text](https://https://res.cloudinary.com/dd4d48hwn/image/upload/v1661765026/getir5_sdhemj.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
