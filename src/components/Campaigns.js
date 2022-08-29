@@ -28,7 +28,7 @@ export default function Campaigns() {
 
     return (
         <div>
-            <div className='container mx-auto py-8'>
+            <div className=' py-8'>
                 <h3 className='font-semibold text-sm mb-2'>Kampanyalar</h3>
                 <Slider {...settings} className="container -mx-2">
                     {banners.length && banners.map((banner, index) => (
