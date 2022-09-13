@@ -92,7 +92,7 @@ export default function Header() {
             </label>
           </label>
 
-          {/* Kayıt Ol */}
+          {/* Kayıt Ol  */}
           <div className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100">
             <TiUserAdd size={20} />
             Kayıt Ol
