@@ -4,6 +4,7 @@ import { TiUserAdd } from "react-icons/ti";
 import React from "react";
 import ReactFlagsSelect from "react-flags-select";
 import { useState } from "react";
+import { VscClose } from "react-icons/vsc";
 
 export default function Header() {
   const [selected, setSelected] = useState("TR");
@@ -30,8 +31,63 @@ export default function Header() {
             className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100"
           >
             <BiGlobe size={20} />
-            Türkçe(TR)
+            <label for="my-modal-1" className="cursor-pointer">
+              {" "}
+              Türkçe(TR)
+            </label>
           </div>
+
+          <input type="checkbox" id="my-modal-1" class="modal-toggle" />
+          <label for="my-modal-1" class="modal cursor-pointer">
+            <label
+              class="modal-box relative rounded-lg w-[450px] h-[300px] bg-gray-50"
+              for=""
+            >
+              <div className="flex">
+                <div className="flex-none w-14 h-14 "></div>
+                <div className="grow h-14">
+                  <h4 class="text-primary-brand-color  text-center font-semibold text-lg mb-10">
+                    Dil Değiştir
+                  </h4>
+                </div>
+                <div className="flex-none w-14 h-14 pl-8 pt-2">
+                  <label
+                    for="my-modal-1"
+                    className="cursor-pointer bg-gray-100"
+                  >
+                    <VscClose size={25} />
+                  </label>
+                </div>
+              </div>
+
+              <div className="grid gap-2 grid-cols">
+                <div>
+                  <label className="flex flex-row">
+                    <input
+                      type="radio"
+                      name="radio-3"
+                      class="radio radio-primary"
+                      checked
+                    />
+                    <h4 className="ml-2 mt-1">Türkçe</h4>
+                  </label>
+                </div>
+                <div>
+                  <label className="flex flex-row">
+                    <input
+                      type="radio"
+                      name="radio-3"
+                      class="radio radio-primary"
+                    />
+                    <h4 className="ml-2 mt-1">English</h4>
+                  </label>
+                  <button className="bg-primary-brand-color text-brand-yellow transition-color hover:bg-brand-yellow hover:text-primary-brand-color h-12 flex items-center justify-center rounded-md w-full text-sm font-semibold mt-6 ">
+                    Güncelle
+                  </button>
+                </div>
+              </div>
+            </label>
+          </label>
 
           {/* GirişYap */}
           <div className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100">
@@ -44,12 +100,25 @@ export default function Header() {
           <input type="checkbox" id="my-modal-4" class="modal-toggle" />
           <label for="my-modal-4" class="modal cursor-pointer">
             <label
-              class="modal-box relative rounded-lg w-[440px] h-[380px] bg-gray-50 p-6"
+              class="modal-box relative rounded-lg w-[450px] h-[360px] bg-gray-50 p-6"
               for=""
             >
-              <h4 class="text-primary-brand-color  text-center font-semibold text-lg mb-10">
-                Giriş Yap veya Kayıt Ol
-              </h4>
+              <div className="flex">
+                <div className="flex-none w-14 h-14 "></div>
+                <div className="grow h-14">
+                  <h4 class="text-primary-brand-color  text-center font-semibold text-lg mb-10">
+                    Giriş Yap veya Kayıt Ol
+                  </h4>
+                </div>
+                <div className="flex-none w-14 h-14 pl-8 pt-2">
+                  <label
+                    for="my-modal-4"
+                    className="cursor-pointer bg-gray-100"
+                  >
+                    <VscClose size={25} />
+                  </label>
+                </div>
+              </div>
 
               <div className="grid gap-y-3 mb-10">
                 <div className="flex gap-x-2">
@@ -75,17 +144,20 @@ export default function Header() {
                 <button className="bg-brand-yellow text-primary-brand-color transition-color hover:bg-primary-brand-color hover:text-brand-yellow h-12 flex items-center justify-center rounded-md w-full text-sm font-semibold ">
                   Telefon Numarası ile Devat Et
                 </button>
-                <p className=" text-sm text-gray-500">
+                <p className=" text-xs text-gray-500">
                   Kişisel verilerinize dair Aydınlatma Metni için{" "}
                   <a href="#" className="text-primary-brand-color">
                     tıklayınız.
                   </a>
                 </p>
               </div>
-              <div className=" flex flex-col w-full  bg-gray-100">
-                <div className="grid h-14 card bg-base-300 rounded-box place-items-center">
+              <div className=" flex flex-col w-full rounded-lg ">
+                <div className="grid h-14 card bg-base-300  place-items-center">
                   <h4 class=" text-center text-base mb-0 text-gray-500 ">
-                    Hala kayıt olmadınız mı? <a href="#" className="text-primary-brand-color">Kayıt Ol</a>
+                    Hala kayıt olmadınız mı?{" "}
+                    <a href="#" className="text-primary-brand-color">
+                      Kayıt Ol
+                    </a>
                   </h4>
                 </div>
               </div>
